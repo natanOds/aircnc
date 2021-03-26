@@ -1,6 +1,7 @@
 # aircnc
 
-https://user-images.githubusercontent.com/47895394/75175901-f550df80-5711-11ea-8c33-f5d8d1780e73.jpg
+![75175901-f550df80-5711-11ea-8c33-f5d8d1780e73](https://user-images.githubusercontent.com/71585908/112566194-44f25680-8dbd-11eb-9ea3-9633613e1840.jpg)
+
 
 
 Este projeto é uma proposta de aplicativo onde empresas podem anunciar os seus espaços para que desenvolvedores possam utilizar as suas intalações durante as suas atividades.
