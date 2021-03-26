@@ -1,9 +1,11 @@
 import AsyncStorage from '@react-native-community/async-storage';
 import React, { useState } from 'react';
-import { View, Text, Image, StyleSheet, SafeAreaView } from 'react-native';
+import { View, Text, Image, StyleSheet, ScrollView, SafeAreaView } from 'react-native';
 import { useEffect } from 'react/cjs/react.development';
 
-import logo from '../assets/logo.png';;
+import SpotList from '../components/SpotList';
+
+import logo from '../assets/logo.png';
 
 export default function List(){
   const [techs, setTechs] = useState([]);
@@ -20,7 +22,11 @@ export default function List(){
 
   return(
    <SafeAreaView style={StyleSheet.container}>
-    <Image source={logo} />
+    <Image style={styles.logo} source={logo} />
+
+    <ScrollView>
+    {techs.map(tech => <SpotList key={tech} tech={tech} />)}
+    </ScrollView>
   </SafeAreaView>
   )
 }
@@ -28,5 +34,11 @@ export default function List(){
 const styles = StyleSheet.create({
   container:{
     flex: 1,
-  }
+  },
+  logo: {
+    height: 32,
+    resizeMode: "contain",
+    alignSelf: 'center',
+
+  },
 })
